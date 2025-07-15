@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const MovieHeader = (props) => {
-  const appTitle = useSelector(store => store.appTitle);;
+  const appTitle = useSelector(store => store.movie.appTitle);;
   const displayFavorites = true;
 
   return (

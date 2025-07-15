@@ -1,4 +1,4 @@
-
+import { useSelector } from "react-redux";
 
 
 const initialState = {
@@ -7,11 +7,10 @@ const initialState = {
 };
 
 
-
 export const favsReducer = (state = initialState, action) => {
     switch (action.type) {
 
         default:
-            return statusbar;
+            return state;
     }
 }
