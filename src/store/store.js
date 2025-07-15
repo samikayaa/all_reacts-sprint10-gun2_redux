@@ -1,7 +1,8 @@
 import { legacy_createStore as createStore } from "redux";
+import reducer from "./reducers/movieReducer"
 
-const globalReducer = (state, action) => {
+const reducer = (state, action) => {
     return state;
 }
 
-export const myStore = createStore(globalReducer);
+export const myStore = createStore(reducer);

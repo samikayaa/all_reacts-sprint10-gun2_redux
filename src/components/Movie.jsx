@@ -11,7 +11,11 @@ const Movie = (props) => {
 
 
   const dispatch = useDispatch();
-  const deleteMovieHandler = dispatch(deleteMovie());
+  const deleteMovieHandler = () => {
+    dispatch(deleteMovie(Number(id)));
+    push("/movies");
+  }
+
 
   return (
     <div className="bg-white rounded-md shadow flex-1">
